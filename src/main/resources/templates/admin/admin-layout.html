@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1"/>
+<title layout:title-pattern="$CONTENT_TITLE - $DECORATOR_TITLE">Admin page</title>
+<style type="text/css" th:replace="@{/shared/admin/_style}"></style>
+</head>
+<body>
+	<div th:replace="@{/shared/admin/_header}"></div>
+	<div th:replace="@{/shared/admin/_leftsidebar}"></div>
+	<div layout:fragment="content"></div>
+	<div th:replace="@{/shared/admin/_clear}"></div>
+	<div th:replace="@{/shared/admin/_footer}"></div>
+	<div layout:fragment="script"></div>
+</body>
+</html>

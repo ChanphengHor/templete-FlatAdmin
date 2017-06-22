@@ -1,0 +1,25 @@
+<div id="menu" class="hidden-print hidden-xs">
+	<div class="sidebar sidebar-inverse">
+		<div class="user-profile media innerAll">
+			<a href="" class="pull-left"><img th:src="@{/resources/assets/images/people/50/8.jpg}" alt="" class="img-circle"><span class="badge badge-primary">3</span></a>
+			<div class="media-body">
+				<a href="" class="strong" th:text="#{pheng}">Chanpheng Hor</a>
+				<p class="text-success"><i class="fa fa-fw fa-circle"></i> <span th:text="#{online}">Online</span> </p>
+			</div>
+			<ul>
+				<li class="active"><a href=""><i class="fa fa-fw fa-user"></i></a></li>
+				<li><a href=""><i class="fa fa-fw fa-envelope"></i></a></li>
+				<li><a href=""><i class="fa fa-fw fa-lock"></i></a></li>
+			</ul>
+		</div>
+		<div class="sidebarMenuWrapper">
+			<ul class="list-unstyled">
+				<li><a th:href="@{/admin/}"><i class=" icon-projector-screen-line"></i><span th:text="#{Dashboard}">Dashboard</span></a></li>
+				<li><a th:href="@{/admin/user-list}"><i class="icon-group"></i><span th:text="#{User}">Users</span></a></li>
+				<li><a th:href="@{/admin/user-cu}"><i class="icon-compose"></i><span th:text="#{C-user}">Create User</span></a></li>
+				<li><a th:href="@{/admin/role-list}"><i class="icon-settings-wheel-fill"></i><span th:text="#{R-lst}">Role List</span></a></li>
+				<li><a th:href="@{/admin/role-cu}"><i class="icon-note-pad"></i><span th:text="#{R-cu}">Role List</span></a></li>						
+			</ul>
+		</div>
+	</div>
+</div>
